@@ -5,7 +5,6 @@
     <a href='https://hisssec.github.io/' target='_blank'><strong>Delong Zhu</strong></a><sup> 1</sup>&emsp;
     <a target='_blank'><strong>Xinjie Cui</strong></a><sup> 1</sup>&emsp;
     <a target='_blank'><strong>Siwei Lyu<</strong></a><sup> 2</sup>&emsp;
-
 </div>
 
 <!-- <div align='center'>
