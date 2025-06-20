@@ -22,7 +22,7 @@
 
 <div align="center">
   <!-- <a href='LICENSE'><img src='https://img.shields.io/badge/license-MIT-yellow'></a> -->
-  <a href='https://arxiv.org/pdf/2412.01101'><img src='https://img.shields.io/badge/arXiv-FacePoison-red'></a>
+  <a href='https://arxiv.org/pdf/2412.01101'><img src='https://img.shields.io/badge/arXiv-Celeb-DF++-red'></a>
   <a href='https://img.shields.io/badge/Python-3.8.19-green'><img src='https://img.shields.io/badge/Python-3.8.19-green'></a>
   <a href='https://img.shields.io/badge/PyTorch-2.2.1-green'><img src='https://img.shields.io/badge/PyTorch-2.2.1-blue'></a>
   <!--<a href="https://github.com/KwaiVGI/LivePortrait"><img src="https://img.shields.io/github/stars/KwaiVGI/LivePortrait"></a> -->
