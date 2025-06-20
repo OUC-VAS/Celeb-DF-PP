@@ -1,7 +1,7 @@
 <h1 align="center">Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics</h1>
 
 <div align='center'>
-    <a href='https://yuezunli.github.io/' target='_blank'><strong>Yuezun Li</strong></a><sup> 1*</sup>&emsp;
+    <a href='https://yuezunli.github.io/' target='_blank'><strong>Yuezun Li</strong></a><sup> 1</sup>&emsp;
     <a href='https://hisssec.github.io/' target='_blank'><strong>Delong Zhu</strong></a><sup> 1</sup>&emsp;
     <a target='_blank'><strong>Xinjie Cui</strong></a><sup> 1</sup>&emsp;
     <a target='_blank'><strong>Siwei Lyu</strong></a><sup> 2</sup>&emsp;
