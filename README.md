@@ -120,7 +120,7 @@ python adv_detect.py --exp 'exp3' # Adversarial_sample
 The `--exp` argument supports four options: [origin, exp1, exp2, exp3], which correspond to the methods [FP-all, FP-fixed, FP-forward, VideoFacePoison] in the paper.
 
 ## Acknowledgements 💐
-We would like to thank the contributors of [RetinaFace](https://github.com/biubug6/Pytorch_Retinaface), [YOLO5Face](https://github.com/deepcam-cn/yolov5-face), [PyramidBox](https://github.com/cs-giung/face-detection-pytorch), [S3FD](https://github.com/cs-giung/face-detection-pytorch) and [DSFD](https://github.com/cs-giung/face-detection-pytorch) repositories, for their open research and contributions.
+We would like to thank the contributors of [DeepfakeBench](https://github.com/SCLBD/DeepfakeBench), [ForensicsAdapter](https://github.com/OUC-VAS/ForensicsAdapter), [Effort](https://github.com/YZY-stack/Effort-AIGI-Detection), [ProDet](https://github.com/beautyremain/ProDet) and all related repositories, for their open research and contributions.
 
 ## Citation 💖
 If you find Celeb-DF++ useful for your research, welcome to 🌟 this repo and cite our work using the following BibTeX:
