@@ -123,7 +123,7 @@ The `--exp` argument supports four options: [origin, exp1, exp2, exp3], which co
 We would like to thank the contributors of [RetinaFace](https://github.com/biubug6/Pytorch_Retinaface), [YOLO5Face](https://github.com/deepcam-cn/yolov5-face), [PyramidBox](https://github.com/cs-giung/face-detection-pytorch), [S3FD](https://github.com/cs-giung/face-detection-pytorch) and [DSFD](https://github.com/cs-giung/face-detection-pytorch) repositories, for their open research and contributions.
 
 ## Citation 💖
-If you find FacePoison useful for your research, welcome to 🌟 this repo and cite our work using the following BibTeX:
+If you find Celeb-DF++ useful for your research, welcome to 🌟 this repo and cite our work using the following BibTeX:
 ```bibtex
 
 
