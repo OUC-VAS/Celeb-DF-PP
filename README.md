@@ -125,20 +125,23 @@ We would like to thank the contributors of [RetinaFace](https://github.com/biubu
 ## Citation 💖
 If you find FacePoison useful for your research, welcome to 🌟 this repo and cite our work using the following BibTeX:
 ```bibtex
+<!--
 @article{zhu2024hiding,
   title={Hiding Faces in Plain Sight: Defending DeepFakes by Disrupting Face Detection},
   author={Zhu, Delong and Li, Yuezun and Wu, Baoyuan and Zhou, Jiaran and Wang, Zhibo and Lyu, Siwei},
   journal={arXiv preprint arXiv:2412.01101},
   year={2024}
 }
+-->
 
-@inproceedings{li2023face,
-  title={Face Poison: Obstructing DeepFakes by Disrupting Face Detection},
-  author={Li, Yuezun and Zhou, Jiaran and Lyu, Siwei},
-  booktitle={IEEE International Conference on Multimedia and Expo},
-  year={2023}
+@inproceedings{li2020celeb,
+  title={Celeb-df: A large-scale challenging dataset for deepfake forensics},
+  author={Li, Yuezun and Yang, Xin and Sun, Pu and Qi, Honggang and Lyu, Siwei},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+  year={2020}
 }
 ```
 ## Contact 📧
+[**Yuezun Li**](https://yuezunli.github.io/); **liyuezun@ouc.edu.cn**
 [**Delong Zhu**](https://hisssec.github.io/); **zhudelong@stu.ouc.edu.cn**
 
