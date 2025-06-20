@@ -40,7 +40,7 @@
 </p>
 
 ## Introduction 📖
-This repo, named **FacePoison**, contains the official PyTorch implementation of our paper [Hiding Faces in Plain Sight: Defending DeepFakes by Disrupting Face Detection](https://arxiv.org/pdf/2412.01101).
+This repo, named **Celeb-DF++**, contains the official PyTorch implementation of our paper [Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics](https://arxiv.org/pdf/2412.01101).
 We are actively updating and improving this repository. If you find any bugs or have suggestions, welcome to raise issues or submit pull requests (PR). 💖
 
 ## Getting Started 🏁
