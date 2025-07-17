@@ -143,13 +143,13 @@ Celeb-DF++
 │       │       ├── MCNET
 │       │       └── TPSMM
 │       └── TalkingFace
-│       │       ├── AniTalker
-│       │       ├── EchoMimic
-│       │       ├── EDTalk
-│       │       ├── FLOAT
-│       │       ├── IP_LAP
-│       │       ├── Real3DPortrait
-│       │       └── SadTalker
+│               ├── AniTalker
+│               ├── EchoMimic
+│               ├── EDTalk
+│               ├── FLOAT
+│               ├── IP_LAP
+│               ├── Real3DPortrait
+│               └── SadTalker
 └──List_of_testing_videos.txt
 ```
 
