@@ -34,7 +34,7 @@
 
 <p align="center">
   🔥 Code has released.🔥
-  <img src="./figures/overview.png" alt="showcase">
+  <img src="./figures/vis.png" alt="showcase">
   <br>
 
 </p>
