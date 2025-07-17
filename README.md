@@ -33,7 +33,7 @@
 
 
 <p align="center">
-  🔥 Code has released.🔥
+  🔥 Dataset has released.🔥
   <img src="./figures/vis.png" alt="showcase">
   <br>
 
