@@ -119,6 +119,40 @@ python adv_detect.py --exp 'exp3' # Adversarial_sample
 ```
 The `--exp` argument supports four options: [origin, exp1, exp2, exp3], which correspond to the methods [FP-all, FP-fixed, FP-forward, VideoFacePoison] in the paper.
 
+## Dataset Structure 📂
+```
+Celeb-DF++
+├──Celeb-real
+├──YouTube-real
+├──Celeb-synthesis
+│       ├── FaceSwap
+│       │       ├── Celeb-DF-v2
+│       │       ├── BlendFace
+│       │       ├── GHOST
+│       │       ├── HifiFace
+│       │       ├── InSwapper
+│       │       ├── MobileFaceSwap
+│       │       ├── SimSwap
+│       │       └── UniFace
+│       ├── FaceReenact
+│       │       ├── DaGAN
+│       │       ├── FSRT
+│       │       ├── HyperReenact
+│       │       ├── LIA
+│       │       ├── LivePortrait
+│       │       ├── MCNET
+│       │       └── TPSMM
+│       └── TalkingFace
+│       │       ├── AniTalker
+│       │       ├── EchoMimic
+│       │       ├── EDTalk
+│       │       ├── FLOAT
+│       │       ├── IP_LAP
+│       │       ├── Real3DPortrait
+│       │       └── SadTalker
+└──List_of_testing_videos.txt
+```
+
 ## Acknowledgements 💐
 We would like to thank the contributors of [DeepfakeBench](https://github.com/SCLBD/DeepfakeBench), [ForensicsAdapter](https://github.com/OUC-VAS/ForensicsAdapter), [Effort](https://github.com/YZY-stack/Effort-AIGI-Detection), [ProDet](https://github.com/beautyremain/ProDet) and all related repositories, for their open research and contributions.
 
