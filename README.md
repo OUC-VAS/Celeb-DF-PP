@@ -95,7 +95,7 @@ For real videos, we follow the split of Celeb-DF, where 178 videos are selected.
 ## Getting Started 🏁
 > [!NOTE]
 > - Most of the methods are implemented following the default settings and pre-processing procedures in **[DeepfakeBench](https://github.com/SCLBD/DeepfakeBench)**. We also provide our retrained but unpublished **[pre-trained weights](https://github.com/OUC-VAS/Celeb-DF-PP/releases)** of DeepFakeBench to facilitate evaluation and testing.
-> - **Celeb-DF++** is implemented within the framework of DeepfakeBench. The provided code should be placed in the corresponding folders in DeepfakeBench, and test/train on DeepfakeBench as well.
+> - **Celeb-DF++** is implemented within the framework of DeepfakeBench. The provided code should be placed in the corresponding folders of DeepFakeBench, replacing the original files as needed, and test/train on DeepfakeBench as well.
 
 ## Comparison of DeepFake Video Benchmarks ⚔️
 <p align="center">
