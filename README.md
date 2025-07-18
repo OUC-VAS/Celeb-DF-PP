@@ -22,9 +22,9 @@
 
 <div align="center">
   <!-- <a href='LICENSE'><img src='https://img.shields.io/badge/license-MIT-yellow'></a> -->
+    <a href='https://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Celeb-DF_A_Large-Scale_Challenging_Dataset_for_DeepFake_Forensics_CVPR_2020_paper.pdf'><img src='https://img.shields.io/badge/CVPR-CelebDF-green'></a>
   <a href='https://arxiv.org/pdf/2412.01101'><img src='https://img.shields.io/badge/arXiv-CelebDF++-red'></a>
-  <a href='https://img.shields.io/badge/Python-3.8.19-green'><img src='https://img.shields.io/badge/Python-3.8.19-green'></a>
-  <a href='https://img.shields.io/badge/PyTorch-2.2.1-green'><img src='https://img.shields.io/badge/PyTorch-2.2.1-blue'></a>
+  <a href='https://github.com/OUC-VAS/Celeb-DF-PP/releases'><img src='https://img.shields.io/badge/Checkpoint-CelebDF++-blue'></a>
   <!--<a href="https://github.com/KwaiVGI/LivePortrait"><img src="https://img.shields.io/github/stars/KwaiVGI/LivePortrait"></a> -->
   <br>
 
@@ -33,91 +33,22 @@
 
 
 <p align="center">
-  🔥 Dataset has released.🔥
-  <img src="./figures/vis.png" alt="showcase">
+  <img src="vis.png" alt="showcase">
   <br>
 
 </p>
 
+## Updates 🔥 
+ - We released the **Celeb-DF++ (v3)** dataset 💪
+ - We released the official version of **[Celeb-DF (v2)](https://github.com/yuezunli/celeb-deepfakeforensics)** dataset ✨
+ - We released the preview version of **[Celeb-DF (v1)](https://github.com/yuezunli/celeb-deepfakeforensics/blob/master/Celeb-DF-v1/README.md)** dataset 😊
+
+
 ## Introduction 📖
-This repo, named **Celeb-DF++**, contains the official PyTorch implementation of our paper [Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics](https://arxiv.org/pdf/2412.01101).
+**Celeb-DF++** is extended from our previous **Celeb-DF** dataset with more diversity, including **22** various DeepFake methods that span across **Face-swap (FS)**, **Face-reenactment (FR)**, and **Talking-face (TF)** scenarios. Moreover, we conduct comprehensive up-to-date evaluations using **24** detectors, including 5 recent ones released after 2023 that have not been considered in existing datasets.
+
+This repo contains the official PyTorch implementation of our paper [Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics](https://arxiv.org/pdf/2412.01101).
 We are actively updating and improving this repository. If you find any bugs or have suggestions, welcome to raise issues or submit pull requests (PR). 💖
-
-## Getting Started 🏁
-### 1. Clone the code and prepare the environment 🛠️
-
-> [!Note]
-> We recommend using [Anaconda](https://www.anaconda.com/) to manage the Python environment:
-
-```bash
-git clone https://github.com/OUC-VAS/FacePoison
-cd FacePoison
-
-# create env using conda
-conda create -n FacePoison python=3.8
-conda activate FacePoison
-pip3 install torch torchvision torchaudio
-pip install -r requirements.txt
-```
-
-**Here**:  The version and device information I used is also provided below for reference.
-```bash
-- Python 3.8.19
-- PyTorch 2.2.1
-- CUDA 12.1
-- GPU NVIDIA RTX 3060
-- OS Ubuntu 22.04
-```
-
-### 2. Data Preparation 📦
-
-You can download images and annotations of WIDER dataset from [Google Drive](https://drive.google.com/file/d/1wnuwBPZd0wfg8M1n1KupRnUxMiXlZ1rD/view?usp=drive_link) or [OneDrive](hhttps://stuouceducn-my.sharepoint.com/:u:/g/personal/zhudelong_stu_ouc_edu_cn/ESgiYGjMMGZBsNbWrgCfRWYBXxHybd2TvMdmQjj2dIlqpw). Unzip and place them in `./attack_public_datasets`.
-
-If you intend to perform protection on videos, we provide the data for id0, id1, and id2 from the Celeb-DF used in our main experiments. You can download them from [Google Drive](https://drive.google.com/file/d/1jQQPtuTOF_6v1-97MIWTj_pnm8gVFgMo/view?usp=sharing) or [OneDrive](https://stuouceducn-my.sharepoint.com/:u:/g/personal/zhudelong_stu_ouc_edu_cn/EQcGToFTh6pAsO7SrBJk6G0Bm9hgg5nDlXqcEICfjZUuXw?e=YIHeHW) to assist with the next step of generating perturbations. Unzip and place them in `./VideoFacePoison/attack_public_datasets`.
-
-### 3. Download Pretrained Weights 📥
-
-Please download all pretrained weights of face detectors from [Google Drive](https://drive.google.com/file/d/1SDcrALa6Dp9OTCUNckToyr8BsncZktM6/view?usp=sharing) or [OneDrive](https://stuouceducn-my.sharepoint.com/:u:/g/personal/zhudelong_stu_ouc_edu_cn/EZzuihap0hhFi-DeLaogK3YBoux9cORzaKuHkZEeKJUfbg?e=nfEOF3). Place them in `./detectors/xxx/weights`, respectively.
-
-### 4. FacePoison 🎭
-> [!IMPORTANT]
-> When you need to attack **YOLO5Face**, you need to uncomment lines 24 and 25 in the code `./detectors/yolov5face/__init__.py`, and conversely, comment out the code during inference.
-
-#### Attack 💉
-
-```bash
-cd attack_public_datasets
-python run_poison.py
-```
-If the script runs successfully, you will get a series of adversarial samples in `/save_data/wider/adv/`.
-#### Inference 🔎
-```bash
-python origin_detect.py  # Clean_sample
-python adv_detect.py  # Adversarial_sample
-```
-
-### 5. VideoFacePoison 👾
-
-#### Attack 💉
-
-FacePoison is applied to every frame of the videos：
-```bash
-# FP-all
-cd VideoFacePosion
-python run_poison.py
-```
-#### Inference 🔎
-
-> [!Note]
-> - Since the Celeb-DF videos do not have face annotations, we use the detection results from PyramidBox — the best-performing face detector on the WIDER dataset — as the ground truth for the other four detectors. To detect faces for PyramidBox itself, we use the results from the second-best detector: DSFD.
-> - For the generation of VideoFacePoison, we significantly reduced the time cost. In the code, after generating the perturbations, we directly use them for testing.
-> - Before executing VideoFacePoison, make sure that FacePoison has been applied to all frames.
-
-```bash
-python origin_detect.py   # Clean_sample
-python adv_detect.py --exp 'exp3' # Adversarial_sample
-```
-The `--exp` argument supports four options: [origin, exp1, exp2, exp3], which correspond to the methods [FP-all, FP-fixed, FP-forward, VideoFacePoison] in the paper.
 
 ## Dataset Structure 📂
 ```
@@ -153,13 +84,42 @@ Celeb-DF++
 └──List_of_testing_videos.txt
 ```
 
+## Training and Testing Split ✂️
+
+> [!IMPORTANT]
+> - For the **Highlighting the Increased Challenge**, the real video samples are replicated 22 times—corresponding to the 22 DeepFake methods—and then combined with the DeepFake samples.
+> - For the **Protocol #3 (GFD-eval)**, each DeepFake method is independently paired with its corresponding real videos for testing.
+
+For real videos, we follow the split of Celeb-DF, where 178 videos are selected. For DeepFake videos, we randomly select 200 videos per method in the Face-swap scenario, 200 videos per method in the Face-reenactment scenario, and 300 videos per method in the Talking-face scenario, respectively. The test set loading strategy remains consistent with Celeb-DF and can be implemented using the `List_of_testing_videos.txt` file.
+
+## Getting Started 🏁
+> [!NOTE]
+> - Most of the methods are implemented following the default settings and pre-processing procedures in **[DeepfakeBench](https://github.com/SCLBD/DeepfakeBench)**. We also provide our retrained but unpublished **[pre-trained weights](https://github.com/OUC-VAS/Celeb-DF-PP/releases)** of DeepFakeBench to facilitate evaluation and testing.
+> - **Celeb-DF++** is implemented within the framework of DeepfakeBench. The provided code should be placed in the corresponding folders in DeepfakeBench, and test/train on DeepfakeBench as well.
+
+## Comparison of DeepFake Video Benchmarks ⚔️
+<p align="center">
+  <img src="vs_benchmark.png" alt="showcase">
+  <br>
+
+</p>
+
+## Privacy Statement 🛡️
+
+This dataset  follow ethical guidelines, which is provided "as it is" and we are not responsible for any subsequence from using this dataset. All original videos of the Celeb-DF++ dataset are obtained from the Internet which are not property of the authors or the authors’ affiliated institutions. Neither the authors or the authors’ affiliated institution are responsible for the content nor the meaning of these videos. If you feel uncomfortable about your identity shown in this dataset, please contact us and we will remove corresponding information from the dataset.
+
 ## Acknowledgements 💐
 We would like to thank the contributors of [DeepfakeBench](https://github.com/SCLBD/DeepfakeBench), [ForensicsAdapter](https://github.com/OUC-VAS/ForensicsAdapter), [Effort](https://github.com/YZY-stack/Effort-AIGI-Detection), [ProDet](https://github.com/beautyremain/ProDet) and all related repositories, for their open research and contributions.
 
 ## Citation 💖
 If you find Celeb-DF++ useful for your research, welcome to 🌟 this repo and cite our work using the following BibTeX:
 ```bibtex
-
+@article{xxx,
+  title={Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics},
+  author={Li, Yuezun and Zhu, Delong and Cui, Xinjie and Lyu, Siwei},
+  journal={arXiv preprint arXiv:xxx},
+  year={2025}
+}
 
 @inproceedings{li2020celeb,
   title={Celeb-df: A large-scale challenging dataset for deepfake forensics},
@@ -171,4 +131,3 @@ If you find Celeb-DF++ useful for your research, welcome to 🌟 this repo and c
 ## Contact 📧
 [**Yuezun Li**](https://yuezunli.github.io/); **liyuezun@ouc.edu.cn**<br>
 [**Delong Zhu**](https://hisssec.github.io/); **zhudelong@stu.ouc.edu.cn**
-
