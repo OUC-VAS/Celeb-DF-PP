@@ -99,7 +99,7 @@ For real videos, we follow the split of Celeb-DF, where 178 videos are selected.
 
 ## Comparison of DeepFake Video Benchmarks ⚔️
 <p align="center">
-  <img src="vs_benchmark.png" alt="showcase">
+  <img src="figures/vs_benchmark.png" alt="showcase">
   <br>
 
 </p>
