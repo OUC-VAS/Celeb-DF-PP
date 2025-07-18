@@ -33,7 +33,7 @@
 
 
 <p align="center">
-  <img src="vis.png" alt="showcase">
+  <img src="figures/vis.png" alt="showcase">
   <br>
 
 </p>
