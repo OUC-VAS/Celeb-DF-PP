@@ -18,11 +18,6 @@
   <img src="figures/overview.png" width="800" alt="overview">
 </p>
 
-<!-- ## Updates 🔥 
- - We released the **Celeb-DF++ (v3)** dataset 💪
- - We released the official version of **[Celeb-DF (v2)](https://github.com/yuezunli/celeb-deepfakeforensics)** dataset ✨
- - We released the preview version of **[Celeb-DF (v1)](https://github.com/yuezunli/celeb-deepfakeforensics/blob/master/Celeb-DF-v1/README.md)** dataset 😊 -->
-
 
 ## Introduction 
 
@@ -39,6 +34,9 @@ To comprehensively measure the generalizability of DeepFake detection methods, w
 
 With these evaluation protocols, we conduct comprehensive up-to-date evaluations using **24** recent detectors (including 5 recent ones released after 2024). 
 
+<p align="center">
+  <img src="figures/generalizable.png" width="400" alt="">
+</p>
 
 ## Download 
 If you would like to access the Celeb-DF++ dataset, please fill out this [form](). Once your request is approved, a download link will be provided. For any inquiries, feel free to contact us at liyuezun@ouc.edu.cn.
@@ -97,23 +95,23 @@ This dataset is released under the [Terms to Use Celeb-DF](), which is provided 
 ## Citation 
 If you find this dataset useful for your research, welcome to star this repo and cite our work using the following BibTeX:
 ```bibtex
-@article{xxx,
-  title={Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics},
-  author={Li, Yuezun and Zhu, Delong and Cui, Xinjie and Lyu, Siwei},
-  journal={arXiv preprint arXiv:xxx},
-  year={2025}
-}
-
 @inproceedings{li2020celeb,
   title={Celeb-df: A large-scale challenging dataset for deepfake forensics},
   author={Li, Yuezun and Yang, Xin and Sun, Pu and Qi, Honggang and Lyu, Siwei},
   booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
   year={2020}
 }
+
+@article{xxx,
+  title={Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics},
+  author={Li, Yuezun and Zhu, Delong and Cui, Xinjie and Lyu, Siwei},
+  journal={arXiv preprint arXiv:xxx},
+  year={2025}
+}
 ```
 
 ## Privacy Statement
-This dataset is released under the [Terms to Use Celeb-DF](), which is provided "as it is" and we are not responsible for any subsequence from using this dataset. All original videos of the Celeb-DF dataset are obtained from the Internet which are not property of the authors or the authors’ affiliated institutions. Neither the authors or the authors’ affiliated institution are responsible for the content nor the meaning of these videos. If you feel uncomfortable about your identity shown in this dataset, please contact us and we will remove corresponding information from the dataset.
+This dataset is released under the [Terms to Use Celeb-DF++](), which is provided "as it is" and we are not responsible for any subsequence from using this dataset. All original videos of the Celeb-DF dataset are obtained from the Internet which are not property of the authors or the authors’ affiliated institutions. Neither the authors or the authors’ affiliated institution are responsible for the content nor the meaning of these videos. If you feel uncomfortable about your identity shown in this dataset, please contact us and we will remove corresponding information from the dataset.
 
 
 ## Acknowledgements 
