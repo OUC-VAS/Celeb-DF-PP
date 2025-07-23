@@ -21,7 +21,11 @@
 
 ## Introduction 
 
-We introduce **Celeb-DF++** for addressing a pratical and urgent challenge for DeepFake detection, referred to as **Generalizable forensics**.
+We introduce **Celeb-DF++** for addressing a pratical and urgent challenge for DeepFake detection, referred to as **Generalizable forensics**, i.e., detecting a wide range of unseen DeepFake types using a single model.
+<p align="center">
+  <img src="figures/generalizable.png" width="400" alt="overview">
+</p>
+
  Celeb-DF++ is extended from our earlier [Celeb-DF (CVPR'20)](https://github.com/yuezunli/celeb-deepfakeforensics) dataset with significantly more diversity, including **22** various DeepFake methods that span across three commonly witnessed scenarios: 
 - **Face-swap (FS)** represents that the face of a source individual is replaced with a synthesized face of a target individual, while retaining consistent facial attributions.
 - **Face-reenactment (FR)** involves generating new videos of a target individual driven by the behaviors of a source individual, ensuring behavioral consistency.
@@ -34,9 +38,7 @@ To comprehensively measure the generalizability of DeepFake detection methods, w
 
 With these evaluation protocols, we conduct comprehensive up-to-date evaluations using **24** recent detectors (including 5 recent ones released after 2024). 
 
-<p align="center">
-  <img src="figures/generalizable.png" width="400" alt="">
-</p>
+
 
 ## Download 
 If you would like to access the Celeb-DF++ dataset, please fill out this [form](). Once your request is approved, a download link will be provided. For any inquiries, feel free to contact us at liyuezun@ouc.edu.cn.
