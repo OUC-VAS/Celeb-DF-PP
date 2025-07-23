@@ -1,66 +1,57 @@
 <h1 align="center">Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics</h1>
 
 <div align='center'>
-    <a href='https://yuezunli.github.io/' target='_blank'><strong>Yuezun Li</strong></a><sup> 1*</sup>&emsp;
-    <a href='https://hisssec.github.io/' target='_blank'><strong>Delong Zhu</strong></a><sup> 1</sup>&emsp;
-    <a target='_blank'><strong>Xinjie Cui</strong></a><sup> 1</sup>&emsp;
-    <a target='_blank'><strong>Siwei Lyu</strong></a><sup> 2</sup>&emsp;
+    <a href='https://yuezunli.github.io/' target='_blank'><strong>Yuezun Li</strong></a><sup> 1</sup>&emsp;
+    <a href='https://hisssec.github.io/' target'_blank'><strong>Delong Zhu</strong></a><sup> 1</sup>&emsp;
+   <strong>Xinjie Cui</strong></a><sup> 1</sup>&emsp;
+  <strong>Siwei Lyu</strong></a><sup> 2</sup>&emsp;
 </div>
-
-<!-- <div align='center'>
-    <a target='_blank'><strong>Zhibo Wang</strong></a><sup> 3</sup>&emsp;
-    <a target='_blank'><strong>Siwei Lyu</strong></a><sup> 4</sup>&emsp;
-</div>-->
-
 <div align='center'>
     <sup>1 </sup>Ocean University of China&emsp; <sup>2 </sup>University at Buffalo SUNY&emsp;
 </div>
 <div align='center'>
-    <small><sup>*</sup> Corresponding author</small>
+    <a href="">[Paper]</a>
+    <a href="#download">[Download]</a>
 </div>
-<br>
-
-<div align="center">
-  <!-- <a href='LICENSE'><img src='https://img.shields.io/badge/license-MIT-yellow'></a> -->
-    <a href='https://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Celeb-DF_A_Large-Scale_Challenging_Dataset_for_DeepFake_Forensics_CVPR_2020_paper.pdf'><img src='https://img.shields.io/badge/CVPR-CelebDF-green'></a>
-  <a href='https://arxiv.org/pdf/2412.01101'><img src='https://img.shields.io/badge/arXiv-CelebDF++-red'></a>
-  <a href='https://github.com/OUC-VAS/Celeb-DF-PP/releases'><img src='https://img.shields.io/badge/Checkpoint-CelebDF++-blue'></a>
-  <!--<a href="https://github.com/KwaiVGI/LivePortrait"><img src="https://img.shields.io/github/stars/KwaiVGI/LivePortrait"></a> -->
-  <br>
-
-</div>
-<br>
-
 
 <p align="center">
-  <img src="figures/vis.png" alt="showcase">
-  <br>
-
+  <img src="figures/overview.png" width="800" alt="overview">
 </p>
 
-## Updates 🔥 
+<!-- ## Updates 🔥 
  - We released the **Celeb-DF++ (v3)** dataset 💪
  - We released the official version of **[Celeb-DF (v2)](https://github.com/yuezunli/celeb-deepfakeforensics)** dataset ✨
- - We released the preview version of **[Celeb-DF (v1)](https://github.com/yuezunli/celeb-deepfakeforensics/blob/master/Celeb-DF-v1/README.md)** dataset 😊
+ - We released the preview version of **[Celeb-DF (v1)](https://github.com/yuezunli/celeb-deepfakeforensics/blob/master/Celeb-DF-v1/README.md)** dataset 😊 -->
 
 
-## Introduction 📖
-**Celeb-DF++** is extended from our previous **Celeb-DF** dataset with more diversity, including **22** various DeepFake methods that span across **Face-swap (FS)**, **Face-reenactment (FR)**, and **Talking-face (TF)** scenarios. Moreover, we conduct comprehensive up-to-date evaluations using **24** detectors, including 5 recent ones released after 2023 that have not been considered in existing datasets.
+## Introduction 
 
-This repo contains the official PyTorch implementation of our paper [Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics](https://arxiv.org/pdf/2412.01101).
-We are actively updating and improving this repository. If you find any bugs or have suggestions, welcome to raise issues or submit pull requests (PR). 💖
+We introduce **Celeb-DF++** for addressing a pratical and urgent challenge for DeepFake detection, referred to as **Generalizable forensics**.
+ Celeb-DF++ is extended from our earlier [Celeb-DF (CVPR'20)](https://github.com/yuezunli/celeb-deepfakeforensics) dataset with significantly more diversity, including **22** various DeepFake methods that span across three commonly witnessed scenarios: 
+- **Face-swap (FS)** represents that the face of a source individual is replaced with a synthesized face of a target individual, while retaining consistent facial attributions.
+- **Face-reenactment (FR)** involves generating new videos of a target individual driven by the behaviors of a source individual, ensuring behavioral consistency.
+- **Talking-face (TF)** leverages audio input to generate synchronized lip movements in synthesized videos of the target individuals.
 
-## Download 📥
-xxxxxxx
+To comprehensively measure the generalizability of DeepFake detection methods, we establish three challenging evaluation protocols: 
+- **Generalized Forgery evaluation (GF-eval)** assesses detection performance across DeepFake methods in all three forgery scenarios, reflecting real-world conditions where forgeries are diverse and potentially unseen
+- **Generalized Forgery across Quality evaluation (GFQ-eval)** increases the challenge by evaluating the detection performance under varying video compression levels. This aligns with the reality that online videos are often subject to compression, and this compression can obscure forgery traces, raising the challenge for generalizable forensics. 
+- **Generalized Forgery across Datasets evaluation (GFD-eval)** measures the generalizability of detection methods across different datasets, simulating the practical case where training and testing data originate from different sources.
 
-## Dataset Structure 📂
+With these evaluation protocols, we conduct comprehensive up-to-date evaluations using **24** recent detectors (including 5 recent ones released after 2024). 
+
+
+## Download 
+If you would like to access the Celeb-DF++ dataset, please fill out this [form](). Once your request is approved, a download link will be provided. For any inquiries, feel free to contact us at liyuezun@ouc.edu.cn.
+
+
+## Dataset Structure 
 ```
 Celeb-DF++
 ├──Celeb-real
 ├──YouTube-real
 ├──Celeb-synthesis
 │       ├── FaceSwap
-│       │       ├── Celeb-DF-v2
+│       │       ├── Celeb-DF (original DeepFake videos in Celeb-DF)
 │       │       ├── BlendFace
 │       │       ├── GHOST
 │       │       ├── HifiFace
@@ -86,36 +77,25 @@ Celeb-DF++
 │               └── SadTalker
 └──List_of_testing_videos.txt
 ```
+## Viusal Examples
 
-## Training and Testing Split ✂️
-
-> [!IMPORTANT]
-> - For the **Highlighting the Increased Challenge**, the real video samples are replicated 22 times—corresponding to the 22 DeepFake methods—and then combined with the DeepFake samples.
-> - For the **Protocol #3 (GFD-eval)**, each DeepFake method is independently paired with its corresponding real videos for testing.
-
-For real videos, we follow the split of Celeb-DF, where 178 videos are selected. For DeepFake videos, we randomly select 200 videos per method in the Face-swap scenario, 200 videos per method in the Face-reenactment scenario, and 300 videos per method in the Talking-face scenario, respectively. The test set loading strategy remains consistent with Celeb-DF and can be implemented using the `List_of_testing_videos.txt` file.
-
-## Getting Started 🏁
-> [!NOTE]
-> - Most of the methods are implemented following the default settings and pre-processing procedures in **[DeepfakeBench](https://github.com/SCLBD/DeepfakeBench)**. We also provide our retrained but unpublished **[pre-trained weights](https://github.com/OUC-VAS/Celeb-DF-PP/releases)** of DeepFakeBench to facilitate evaluation and testing.
-> - **Celeb-DF++** is implemented within the framework of DeepfakeBench. The provided code should be placed in the corresponding folders of DeepFakeBench, replacing the original files as needed, and test/train on DeepfakeBench as well.
-
-## Comparison of DeepFake Video Benchmarks ⚔️
 <p align="center">
-  <img src="figures/vs_benchmark.png" alt="showcase">
-  <br>
-
+  <img src="figures/examples.png" alt="">
 </p>
+Visual examples of Celeb-DF++. The first column denotes the source identity face and the bottom-left embedded image represents
+the target face or the driving face/audio. The remaining columns display the results generated by each DeepFake method.
 
-## Privacy Statement 🛡️
+## Training and Testing Split 
+For real testing videos, we follow the split of Celeb-DF, where 178 videos are selected. For DeepFake testing videos, we randomly select 200 videos per method in the Face-swap scenario, 200 videos per method in the Face-reenactment scenario, and 300 videos per method in the Talking-face scenario, respectively. The split details can be found in `List_of_testing_videos.txt`.
 
-This dataset  follow ethical guidelines, which is provided "as it is" and we are not responsible for any subsequence from using this dataset. All original videos of the Celeb-DF++ dataset are obtained from the Internet which are not property of the authors or the authors’ affiliated institutions. Neither the authors or the authors’ affiliated institution are responsible for the content nor the meaning of these videos. If you feel uncomfortable about your identity shown in this dataset, please contact us and we will remove corresponding information from the dataset.
 
-## Acknowledgements 💐
-We would like to thank the contributors of [DeepfakeBench](https://github.com/SCLBD/DeepfakeBench), [ForensicsAdapter](https://github.com/OUC-VAS/ForensicsAdapter), [Effort](https://github.com/YZY-stack/Effort-AIGI-Detection), [ProDet](https://github.com/beautyremain/ProDet) and all related repositories, for their open research and contributions.
 
-## Citation 💖
-If you find Celeb-DF++ useful for your research, welcome to 🌟 this repo and cite our work using the following BibTeX:
+## Privacy Statement
+This dataset is released under the [Terms to Use Celeb-DF](), which is provided "as it is" and we are not responsible for any subsequence from using this dataset. All original videos of the Celeb-DF dataset are obtained from the Internet which are not property of the authors or the authors’ affiliated institutions. Neither the authors or the authors’ affiliated institution are responsible for the content nor the meaning of these videos. If you feel uncomfortable about your identity shown in this dataset, please contact us and we will remove corresponding information from the dataset.
+
+
+## Citation 
+If you find this dataset useful for your research, welcome to star this repo and cite our work using the following BibTeX:
 ```bibtex
 @article{xxx,
   title={Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics},
@@ -131,6 +111,14 @@ If you find Celeb-DF++ useful for your research, welcome to 🌟 this repo and c
   year={2020}
 }
 ```
-## Contact 📧
-[**Yuezun Li**](https://yuezunli.github.io/); **liyuezun@ouc.edu.cn**<br>
-[**Delong Zhu**](https://hisssec.github.io/); **zhudelong@stu.ouc.edu.cn**
+
+## Privacy Statement
+This dataset is released under the [Terms to Use Celeb-DF](), which is provided "as it is" and we are not responsible for any subsequence from using this dataset. All original videos of the Celeb-DF dataset are obtained from the Internet which are not property of the authors or the authors’ affiliated institutions. Neither the authors or the authors’ affiliated institution are responsible for the content nor the meaning of these videos. If you feel uncomfortable about your identity shown in this dataset, please contact us and we will remove corresponding information from the dataset.
+
+
+## Acknowledgements 
+We would like to thank the contributors of [DeepfakeBench](https://github.com/SCLBD/DeepfakeBench), [ForensicsAdapter](https://github.com/OUC-VAS/ForensicsAdapter), [Effort](https://github.com/YZY-stack/Effort-AIGI-Detection), [ProDet](https://github.com/beautyremain/ProDet) and all related repositories, for their open research and contributions.
+
+## Contact 
+[Yuezun Li](https://yuezunli.github.io/) (liyuezun@ouc.edu.cn);<br>
+[Delong Zhu](https://hisssec.github.io/) (zhudelong@stu.ouc.edu.cn)
