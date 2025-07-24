@@ -1,7 +1,7 @@
 <h1 align="center">Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics</h1>
 
 <div align='center'>
-    <a href='https://yuezunli.github.io/' target='_blank'><strong>Yuezun Li</strong></a><sup> 1</sup>&emsp;
+    <a href='https://yuezunli.github.io/' target='_blank'><strong>Yuezun Li</strong></a><sup> 1</sup> (✉️)&emsp;
     <a href='https://hisssec.github.io/' target'_blank'><strong>Delong Zhu</strong></a><sup> 1</sup>&emsp;
    <strong>Xinjie Cui</strong></a><sup> 1</sup>&emsp;
   <strong>Siwei Lyu</strong></a><sup> 2</sup>&emsp;
@@ -10,8 +10,11 @@
     <sup>1 </sup>Ocean University of China&emsp; <sup>2 </sup>University at Buffalo SUNY&emsp;
 </div>
 <div align='center'>
-    <a href="">[Paper]</a>
-    <a href="#download">[Download]</a>
+    <a href="">[Paper]</a> &nbsp
+    <a href="#download">[Download]</a> &nbsp
+    <a href="#dataset-structure">[Data Structure]</a> &nbsp
+    <a href="#visual-examples">[Visual Examples]</a> &nbsp
+    <a href="#citation">[Citation]</a>
 </div>
 
 <p align="center">
@@ -41,7 +44,7 @@ With these evaluation protocols, we conduct comprehensive up-to-date evaluations
 
 
 ## Download 
-If you would like to access the Celeb-DF++ dataset, please fill out this [form](). Once your request is approved, a download link will be provided. For any inquiries, feel free to contact us at liyuezun@ouc.edu.cn.
+If you would like to access the Celeb-DF++ dataset, please fill out this [form](). Once your request is approved, a download link will be provided. For any questions, please contact us at liyuezun@ouc.edu.cn.
 
 
 ## Dataset Structure 
@@ -77,7 +80,7 @@ Celeb-DF++
 │               └── SadTalker
 └──List_of_testing_videos.txt
 ```
-## Viusal Examples
+## Visual Examples
 
 <p align="center">
   <img src="figures/examples.png" alt="">
@@ -89,22 +92,17 @@ the target face or the driving face/audio. The remaining columns display the res
 For real testing videos, we follow the split of Celeb-DF, where 178 videos are selected. For DeepFake testing videos, we randomly select 200 videos per method in the Face-swap scenario, 200 videos per method in the Face-reenactment scenario, and 300 videos per method in the Talking-face scenario, respectively. The split details can be found in `List_of_testing_videos.txt`.
 
 
-
-## Privacy Statement
-This dataset is released under the [Terms to Use Celeb-DF](), which is provided "as it is" and we are not responsible for any subsequence from using this dataset. All original videos of the Celeb-DF dataset are obtained from the Internet which are not property of the authors or the authors’ affiliated institutions. Neither the authors or the authors’ affiliated institution are responsible for the content nor the meaning of these videos. If you feel uncomfortable about your identity shown in this dataset, please contact us and we will remove corresponding information from the dataset.
-
-
 ## Citation 
 If you find this dataset useful for your research, welcome to star this repo and cite our work using the following BibTeX:
 ```bibtex
 @inproceedings{li2020celeb,
-  title={Celeb-df: A large-scale challenging dataset for deepfake forensics},
+  title={Celeb-DF: A Large-scale Challenging Dataset for Deepfake Forensics},
   author={Li, Yuezun and Yang, Xin and Sun, Pu and Qi, Honggang and Lyu, Siwei},
   booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
   year={2020}
 }
 
-@article{xxx,
+@article{li2025celebpp,
   title={Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics},
   author={Li, Yuezun and Zhu, Delong and Cui, Xinjie and Lyu, Siwei},
   journal={arXiv preprint arXiv:xxx},
