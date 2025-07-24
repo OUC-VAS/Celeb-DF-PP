@@ -44,7 +44,7 @@ With these evaluation protocols, we conduct comprehensive up-to-date evaluations
 
 
 ## Download 
-If you would like to access the Celeb-DF++ dataset, please fill out this [form](). Once your request is approved, a download link will be provided. For any questions, please contact us at liyuezun@ouc.edu.cn.
+If you would like to access the Celeb-DF++ dataset, please fill out this [form](https://wj.qq.com/s2/23258268/2516/). Once your request is approved, a download link will be provided. For any questions, please contact us at liyuezun@ouc.edu.cn.
 
 
 ## Dataset Structure 
@@ -111,7 +111,7 @@ If you find this dataset useful for your research, welcome to star this repo and
 ```
 
 ## Privacy Statement
-This dataset is released under the [Terms to Use Celeb-DF++](), which is provided "as it is" and we are not responsible for any subsequence from using this dataset. All original videos of the Celeb-DF dataset are obtained from the Internet which are not property of the authors or the authors’ affiliated institutions. Neither the authors or the authors’ affiliated institution are responsible for the content nor the meaning of these videos. If you feel uncomfortable about your identity shown in this dataset, please contact us and we will remove corresponding information from the dataset.
+This dataset is released under the [Terms to Use Celeb-DF++](https://wj.qq.com/s2/23258268/2516/), which is provided "as it is" and we are not responsible for any subsequence from using this dataset. All original videos of the Celeb-DF dataset are obtained from the Internet which are not property of the authors or the authors’ affiliated institutions. Neither the authors or the authors’ affiliated institution are responsible for the content nor the meaning of these videos. If you feel uncomfortable about your identity shown in this dataset, please contact us and we will remove corresponding information from the dataset.
 
 
 ## Acknowledgements 
