@@ -95,18 +95,18 @@ For real testing videos, we follow the split of Celeb-DF, where 178 videos are s
 ## Citation 
 If you find this dataset useful for your research, welcome to star this repo and cite our work using the following BibTeX:
 ```bibtex
-@inproceedings{li2020celeb,
-  title={Celeb-DF: A Large-scale Challenging Dataset for Deepfake Forensics},
-  author={Li, Yuezun and Yang, Xin and Sun, Pu and Qi, Honggang and Lyu, Siwei},
-  booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
-  year={2020}
-}
-
 @article{li2025celebpp,
   title={Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics},
   author={Li, Yuezun and Zhu, Delong and Cui, Xinjie and Lyu, Siwei},
   journal={arXiv preprint arXiv:xxx},
   year={2025}
+}
+
+@inproceedings{li2020celeb,
+  title={Celeb-DF: A Large-scale Challenging Dataset for Deepfake Forensics},
+  author={Li, Yuezun and Yang, Xin and Sun, Pu and Qi, Honggang and Lyu, Siwei},
+  booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+  year={2020}
 }
 ```
 
