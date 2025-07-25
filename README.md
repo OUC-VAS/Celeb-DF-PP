@@ -10,7 +10,7 @@
     <sup>1 </sup>Ocean University of China&emsp; <sup>2 </sup>University at Buffalo SUNY&emsp;
 </div>
 <div align='center'>
-    <a href="https://arxiv.org/abs/2507.18015">[Paper]</a> &nbsp
+    <a href="https://arxiv.org/pdf/2507.18015">[Paper]</a> &nbsp
     <a href="#download">[Download]</a> &nbsp
     <a href="#dataset-structure">[Data Structure]</a> &nbsp
     <a href="#visual-examples">[Visual Examples]</a> &nbsp
