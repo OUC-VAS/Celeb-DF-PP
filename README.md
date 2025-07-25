@@ -98,7 +98,7 @@ If you find this dataset useful for your research, welcome to star this repo and
 @article{li2025celebpp,
   title={Celeb-DF++: A Large-scale Challenging Video DeepFake Benchmark for Generalizable Forensics},
   author={Li, Yuezun and Zhu, Delong and Cui, Xinjie and Lyu, Siwei},
-  journal={arXiv preprint arXiv:xxx},
+  journal={arXiv preprint arXiv:2507.18015},
   year={2025}
 }
 
