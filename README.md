@@ -46,6 +46,7 @@ With these evaluation protocols, we conduct comprehensive up-to-date evaluations
 ## Download 
 If you would like to access the Celeb-DF++ dataset, please fill out this [form](https://wj.qq.com/s2/23258268/2516/). Once your request is approved, a download link will be provided. For any questions, please contact us at liyuezun@ouc.edu.cn.
 
+If the above form link is not working for you, please try using [google form](https://forms.gle/Jq2fE5Cic6vXuFzp7) instead.
 
 ## Dataset Structure 
 ```
