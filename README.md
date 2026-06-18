@@ -118,6 +118,9 @@ This dataset is released under the [Terms to Use Celeb-DF++](https://wj.qq.com/s
 ## Acknowledgements 
 We would like to thank the contributors of [DeepfakeBench](https://github.com/SCLBD/DeepfakeBench), [ForensicsAdapter](https://github.com/OUC-VAS/ForensicsAdapter), [Effort](https://github.com/YZY-stack/Effort-AIGI-Detection), [ProDet](https://github.com/beautyremain/ProDet) and all related repositories, for their open research and contributions.
 
+## License 
+This repository is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License ([CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/?utm_source=chatgpt.com)). This repository is intended for academic research use only. Commercial use is prohibited. Please refer to the LICENSE file for more details.
+
 ## Contact 
 [Yuezun Li](https://yuezunli.github.io/) (liyuezun@ouc.edu.cn);<br>
 [Delong Zhu](https://hisssec.github.io/) (zhudelong@stu.ouc.edu.cn)
